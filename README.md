@@ -18,9 +18,8 @@ Remove the null values from the data
 ### STEP 4
 Save the Clean data to the file
 
-
 # CODE
-
+'''
 import pandas as pd
 df = pd.read_csv("Data_set.csv")
 df.head(10)
@@ -33,7 +32,7 @@ df['rating']=df['rating'].fillna(df['rating'].mean())
 df.info()
 df['rating']=df['rating'].fillna(df['rating'].mean())
 df.head(20)
-
+'''
 # OUPUT
 ![f1](https://user-images.githubusercontent.com/94219582/159970189-45e2b104-f0ef-479b-9a51-9d352a3a6565.PNG)
 ![f2](https://user-images.githubusercontent.com/94219582/159970220-ad5b07a5-0138-47d5-870a-c4bd644e11a5.PNG)
